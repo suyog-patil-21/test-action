@@ -2,10 +2,10 @@
   "name": "test-action",
   "version": "1.0.0",
   "description": "",
-  "main": "src/hello.js",
+  "main": "./src/hello.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/hello.js"
+    "start": "node ./src/hello.js"
   },
   "keywords": [],
   "author": "",
