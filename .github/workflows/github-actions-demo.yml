@@ -17,3 +17,20 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
 
+  build:
+    runs-on: ubuntu-latest
+    needs: Explore-GitHub-Actions
+    steps:
+      - name: Set up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: get path 
+        run: echo $PATH
+      - name: npm version check
+        run: node --version
+      - name: installing dependences
+        run: npm install
+      - name: running project
+        run: npm start
+      
