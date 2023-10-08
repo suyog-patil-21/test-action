@@ -1,0 +1,30 @@
+name: GitHub Actions Demo
+run-name: Testing ${{ inputs }} by ${{ github.actor }} 
+on:
+  push:
+    paths:
+      - "src/**"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: get path 
+        run: echo $PATH
+      - run:  which node
+      - name: check where is node
+        run: whereis node
+      - name: npm version check
+        run: npm --version
+      - name: node version check
+        run: node --version
+      - name: current working dir
+        run: pwd
+
+      
