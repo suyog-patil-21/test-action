@@ -1,7 +1,9 @@
-name: CI 
+name: SRC-CI 
 
 on:
   push:
+    paths:
+      - "src/**"
     branches:
       - main
   pull_request: { }
@@ -9,7 +11,6 @@ on:
 defaults:
   run:
     shell: bash
-    working-directory: src
   
 jobs:
   Explore-GitHub-Actions:
