@@ -12,6 +12,9 @@ on:
 defaults:
   run:
     shell: bash
+
+permissions:
+  pull-requests: none
   
 jobs:
   Explore-GitHub-Actions:
