@@ -1,7 +1,9 @@
-name: CI 
+name: SRC-CI 
 
 on:
   push:
+    paths:
+      - "src/**"
     branches:
       - main
   pull_request: { }
