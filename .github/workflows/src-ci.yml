@@ -26,5 +26,5 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-      - run: echo "Thank you"
+      - run: echo "Thanks for the PR"
       - run: echo "🍏 This job's status is ${{ job.status }}."
