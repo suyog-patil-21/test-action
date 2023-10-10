@@ -14,7 +14,7 @@ defaults:
     shell: bash
 
 permissions:
-  pull-requests: none
+  pull-requests: read 
   
 jobs:
   Explore-GitHub-Actions:
